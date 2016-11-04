@@ -1524,8 +1524,8 @@ public class Controller
         nav.setEnabled(isNavDump);
 
         boolean showDebugSettings = mSettings.isDebugEnabled();
-        final MenuItem uaSwitcher = menu.findItem(R.id.ua_desktop_menu_id);
-        uaSwitcher.setChecked(isDesktopUa);
+        //final MenuItem uaSwitcher = menu.findItem(R.id.ua_desktop_menu_id);
+        //uaSwitcher.setChecked(isDesktopUa);
         menu.setGroupVisible(R.id.LIVE_MENU, isLive);
         menu.setGroupVisible(R.id.SNAPSHOT_MENU, !isLive);
         menu.setGroupVisible(R.id.COMBO_MENU, false);
@@ -1649,9 +1649,9 @@ public class Controller
                 viewDownloads();
                 break;
 
-            case R.id.ua_desktop_menu_id:
-                toggleUserAgent();
-                break;
+            //case R.id.ua_desktop_menu_id:
+            //    toggleUserAgent();
+            //    break;
 
             case R.id.window_one_menu_id:
             case R.id.window_two_menu_id:
