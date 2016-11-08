@@ -632,7 +632,7 @@ public class BrowserSettings implements OnSharedPreferenceChangeListener,
 
     // TODO: Cache
     public ZoomDensity getDefaultZoom() {
-        String zoom = mPrefs.getString(PREF_DEFAULT_ZOOM, "MEDIUM");
+        String zoom = mPrefs.getString(PREF_DEFAULT_ZOOM, "CLOSE");
         return ZoomDensity.valueOf(zoom);
     }
 
@@ -728,9 +728,9 @@ public class BrowserSettings implements OnSharedPreferenceChangeListener,
 
     public boolean isWideViewport() {
         if (!isDebugEnabled()) {
-            return true;
+            return false;
         }
-        return mPrefs.getBoolean(PREF_WIDE_VIEWPORT, true);
+        return mPrefs.getBoolean(PREF_WIDE_VIEWPORT, false);
     }
 
     public boolean isNormalLayout() {
