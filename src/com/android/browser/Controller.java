@@ -2610,6 +2610,9 @@ public class Controller
                     return true;
                 }
                 break;
+            case KeyEvent.KEYCODE_F5:
+                toggleUserAgent();
+                return true;
 //          case KeyEvent.KEYCODE_B:    // menu
 //          case KeyEvent.KEYCODE_D:    // menu
 //          case KeyEvent.KEYCODE_E:    // in Chrome: puts '?' in URL bar
