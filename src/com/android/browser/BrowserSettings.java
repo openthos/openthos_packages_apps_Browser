@@ -695,10 +695,7 @@ public class BrowserSettings implements OnSharedPreferenceChangeListener,
     }
 
     public int getUserAgent() {
-        if (!isDebugEnabled()) {
-            return 1;
-        }
-        return Integer.parseInt(mPrefs.getString(PREF_USER_AGENT, "1"));
+        return 1;
     }
 
     // -----------------------------
@@ -727,10 +724,7 @@ public class BrowserSettings implements OnSharedPreferenceChangeListener,
     }
 
     public boolean isWideViewport() {
-        if (!isDebugEnabled()) {
-            return false;
-        }
-        return mPrefs.getBoolean(PREF_WIDE_VIEWPORT, false);
+        return false;
     }
 
     public boolean isNormalLayout() {
